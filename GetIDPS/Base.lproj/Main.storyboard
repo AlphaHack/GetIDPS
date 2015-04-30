@@ -686,8 +686,8 @@
                                     <constraint firstAttribute="width" constant="552" id="7kU-cj-dAn"/>
                                     <constraint firstAttribute="height" constant="28" id="mp2-jD-e6E"/>
                                 </constraints>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="3a4-NG-VNq">
-                                    <font key="font" metaFont="system"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="center" drawsBackground="YES" id="3a4-NG-VNq">
+                                    <font key="font" metaFont="system" size="19"/>
                                     <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
@@ -698,6 +698,9 @@
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="btnOpen:" target="XfG-lQ-9wD" id="tw3-5V-ioc"/>
+                                </connections>
                             </button>
                         </subviews>
                         <constraints>
@@ -709,6 +712,10 @@
                             <constraint firstAttribute="centerX" secondItem="yKY-tY-AU4" secondAttribute="centerX" id="xHK-ad-2RL"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="idpsDisplay" destination="yKY-tY-AU4" id="139-wI-PZo"/>
+                        <outlet property="lblText" destination="NQv-jT-6mO" id="gcg-2e-ckA"/>
+                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
