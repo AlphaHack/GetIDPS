@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  GetIDPS
 //
-//  Created by Marco Aurelio Viana Almeida on 30/04/15.
+//  Created by AlphaHack on 30/04/15.
 //  Copyright (c) 2015 AlphaHack. All rights reserved.
 //
 
