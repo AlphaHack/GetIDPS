@@ -1,0 +1,415 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F44D5A781AF274A900002C73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44D5A771AF274A900002C73 /* AppDelegate.swift */; };
+		F44D5A7A1AF274A900002C73 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44D5A791AF274A900002C73 /* ViewController.swift */; };
+		F44D5A7C1AF274A900002C73 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F44D5A7B1AF274A900002C73 /* Images.xcassets */; };
+		F44D5A7F1AF274A900002C73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F44D5A7D1AF274A900002C73 /* Main.storyboard */; };
+		F44D5A8B1AF274A900002C73 /* GetIDPSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44D5A8A1AF274A900002C73 /* GetIDPSTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F44D5A851AF274A900002C73 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F44D5A6A1AF274A900002C73 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F44D5A711AF274A900002C73;
+			remoteInfo = GetIDPS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F44D5A721AF274A900002C73 /* GetIDPS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GetIDPS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F44D5A761AF274A900002C73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F44D5A771AF274A900002C73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F44D5A791AF274A900002C73 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F44D5A7B1AF274A900002C73 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F44D5A7E1AF274A900002C73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F44D5A841AF274A900002C73 /* GetIDPSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GetIDPSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F44D5A891AF274A900002C73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F44D5A8A1AF274A900002C73 /* GetIDPSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetIDPSTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F44D5A6F1AF274A900002C73 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F44D5A811AF274A900002C73 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F44D5A691AF274A900002C73 = {
+			isa = PBXGroup;
+			children = (
+				F44D5A741AF274A900002C73 /* GetIDPS */,
+				F44D5A871AF274A900002C73 /* GetIDPSTests */,
+				F44D5A731AF274A900002C73 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F44D5A731AF274A900002C73 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F44D5A721AF274A900002C73 /* GetIDPS.app */,
+				F44D5A841AF274A900002C73 /* GetIDPSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F44D5A741AF274A900002C73 /* GetIDPS */ = {
+			isa = PBXGroup;
+			children = (
+				F44D5A771AF274A900002C73 /* AppDelegate.swift */,
+				F44D5A791AF274A900002C73 /* ViewController.swift */,
+				F44D5A7B1AF274A900002C73 /* Images.xcassets */,
+				F44D5A7D1AF274A900002C73 /* Main.storyboard */,
+				F44D5A751AF274A900002C73 /* Supporting Files */,
+			);
+			path = GetIDPS;
+			sourceTree = "<group>";
+		};
+		F44D5A751AF274A900002C73 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F44D5A761AF274A900002C73 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F44D5A871AF274A900002C73 /* GetIDPSTests */ = {
+			isa = PBXGroup;
+			children = (
+				F44D5A8A1AF274A900002C73 /* GetIDPSTests.swift */,
+				F44D5A881AF274A900002C73 /* Supporting Files */,
+			);
+			path = GetIDPSTests;
+			sourceTree = "<group>";
+		};
+		F44D5A881AF274A900002C73 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F44D5A891AF274A900002C73 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F44D5A711AF274A900002C73 /* GetIDPS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F44D5A8E1AF274A900002C73 /* Build configuration list for PBXNativeTarget "GetIDPS" */;
+			buildPhases = (
+				F44D5A6E1AF274A900002C73 /* Sources */,
+				F44D5A6F1AF274A900002C73 /* Frameworks */,
+				F44D5A701AF274A900002C73 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GetIDPS;
+			productName = GetIDPS;
+			productReference = F44D5A721AF274A900002C73 /* GetIDPS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F44D5A831AF274A900002C73 /* GetIDPSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F44D5A911AF274A900002C73 /* Build configuration list for PBXNativeTarget "GetIDPSTests" */;
+			buildPhases = (
+				F44D5A801AF274A900002C73 /* Sources */,
+				F44D5A811AF274A900002C73 /* Frameworks */,
+				F44D5A821AF274A900002C73 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F44D5A861AF274A900002C73 /* PBXTargetDependency */,
+			);
+			name = GetIDPSTests;
+			productName = GetIDPSTests;
+			productReference = F44D5A841AF274A900002C73 /* GetIDPSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F44D5A6A1AF274A900002C73 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = AlphaHack;
+				TargetAttributes = {
+					F44D5A711AF274A900002C73 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					F44D5A831AF274A900002C73 = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = F44D5A711AF274A900002C73;
+					};
+				};
+			};
+			buildConfigurationList = F44D5A6D1AF274A900002C73 /* Build configuration list for PBXProject "GetIDPS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F44D5A691AF274A900002C73;
+			productRefGroup = F44D5A731AF274A900002C73 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F44D5A711AF274A900002C73 /* GetIDPS */,
+				F44D5A831AF274A900002C73 /* GetIDPSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F44D5A701AF274A900002C73 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F44D5A7C1AF274A900002C73 /* Images.xcassets in Resources */,
+				F44D5A7F1AF274A900002C73 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F44D5A821AF274A900002C73 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F44D5A6E1AF274A900002C73 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F44D5A7A1AF274A900002C73 /* ViewController.swift in Sources */,
+				F44D5A781AF274A900002C73 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F44D5A801AF274A900002C73 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F44D5A8B1AF274A900002C73 /* GetIDPSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F44D5A861AF274A900002C73 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F44D5A711AF274A900002C73 /* GetIDPS */;
+			targetProxy = F44D5A851AF274A900002C73 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F44D5A7D1AF274A900002C73 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F44D5A7E1AF274A900002C73 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F44D5A8C1AF274A900002C73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F44D5A8D1AF274A900002C73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		F44D5A8F1AF274A900002C73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = GetIDPS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F44D5A901AF274A900002C73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = GetIDPS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F44D5A921AF274A900002C73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GetIDPSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GetIDPS.app/Contents/MacOS/GetIDPS";
+			};
+			name = Debug;
+		};
+		F44D5A931AF274A900002C73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GetIDPSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GetIDPS.app/Contents/MacOS/GetIDPS";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F44D5A6D1AF274A900002C73 /* Build configuration list for PBXProject "GetIDPS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F44D5A8C1AF274A900002C73 /* Debug */,
+				F44D5A8D1AF274A900002C73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F44D5A8E1AF274A900002C73 /* Build configuration list for PBXNativeTarget "GetIDPS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F44D5A8F1AF274A900002C73 /* Debug */,
+				F44D5A901AF274A900002C73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F44D5A911AF274A900002C73 /* Build configuration list for PBXNativeTarget "GetIDPSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F44D5A921AF274A900002C73 /* Debug */,
+				F44D5A931AF274A900002C73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F44D5A6A1AF274A900002C73 /* Project object */;
+}
