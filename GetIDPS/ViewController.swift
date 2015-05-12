@@ -83,12 +83,30 @@ class ViewController: NSViewController {
     let filemgr = NSFileManager.defaultManager()
     var bytes : NSData!
     var openPanel = NSOpenPanel()
+    var fileSize : UInt64!
+    
+    func byteReverse(data : NSData) -> NSData {
+        
+        // Copy data into UInt16 array:
+        let count = data.length / sizeof(UInt16)
+        var array = [UInt16](count: count, repeatedValue: 0)
+        data.getBytes(&array, length: count * sizeof(UInt16))
+        
+        // Swap each integer:
+        for i in 0 ..< count {
+            array[i] = array[i].byteSwapped
+        }
+        
+        // Create NSData from array:
+        return NSData(bytes: &array, length: count * sizeof(UInt16))
+    }
     
     @IBAction func btnOpen(sender: NSButton) {
         
         //Get the bkpps3.bin
         if let url = NSOpenPanel().selectUrl {
             let myFile: NSFileHandle? = NSFileHandle(forReadingFromURL: url, error: nil)
+            
             
             //Read the bkpps3.bin and get the IDPS
             myFile!.seekToFileOffset(197584)
@@ -97,46 +115,30 @@ class ViewController: NSViewController {
             //Convert Hex to String
             let token = bytes.hexString()
             
+            //Check Filesize
+            if let filePath = url.path {
+                if let attr : NSDictionary = NSFileManager.defaultManager().attributesOfItemAtPath(filePath, error: nil)  {
+                    let fileSize = attr.fileSize();
+                }
+            }
+            
             //Byte swap
-            var byte1 = "\(String(token.characterAtIndex(2)!))" + "\(String(token.characterAtIndex(3)!))"
-            var byte2 = "\(String(token.characterAtIndex(0)!))" + "\(String(token.characterAtIndex(1)!))"
-            var byte3 = "\(String(token.characterAtIndex(6)!))" + "\(String(token.characterAtIndex(7)!))"
-            var byte4 = "\(String(token.characterAtIndex(4)!))" + "\(String(token.characterAtIndex(5)!))"
-            var byte5 = "\(String(token.characterAtIndex(10)!))" + "\(String(token.characterAtIndex(11)!))"
-            var byte6 = "\(String(token.characterAtIndex(8)!))" + "\(String(token.characterAtIndex(9)!))"
-            var byte7 = "\(String(token.characterAtIndex(14)!))" + "\(String(token.characterAtIndex(15)!))"
-            var byte8 = "\(String(token.characterAtIndex(12)!))" + "\(String(token.characterAtIndex(13)!))"
-            var byte9 = "\(String(token.characterAtIndex(18)!))" + "\(String(token.characterAtIndex(19)!))"
-            var byte10 = "\(String(token.characterAtIndex(16)!))" + "\(String(token.characterAtIndex(17)!))"
-            var byte11 = "\(String(token.characterAtIndex(22)!))" + "\(String(token.characterAtIndex(23)!))"
-            var byte12 = "\(String(token.characterAtIndex(20)!))" + "\(String(token.characterAtIndex(21)!))"
-            var byte13 = "\(String(token.characterAtIndex(26)!))" + "\(String(token.characterAtIndex(27)!))"
-            var byte14 = "\(String(token.characterAtIndex(24)!))" + "\(String(token.characterAtIndex(25)!))"
-            var byte15 = "\(String(token.characterAtIndex(30)!))" + "\(String(token.characterAtIndex(31)!))"
-            var byte16 = "\(String(token.characterAtIndex(28)!))" + "\(String(token.characterAtIndex(29)!))"
-            
-            //Format IDPS
-            var idps = byte1.uppercaseString + byte2.uppercaseString + byte3.uppercaseString + byte4.uppercaseString + byte5.uppercaseString + byte6.uppercaseString + byte7.uppercaseString + byte8.uppercaseString + byte9.uppercaseString + byte10.uppercaseString + byte11.uppercaseString + byte12.uppercaseString + byte13.uppercaseString + byte14.uppercaseString + byte15.uppercaseString + byte16.uppercaseString
-            
-            //Format spaced IDPS
-            var idpsSpaced = byte1.uppercaseString + " " + byte2.uppercaseString + " " + byte3.uppercaseString + " " + byte4.uppercaseString + " " + byte5.uppercaseString + " " + byte6.uppercaseString + " " + byte7.uppercaseString + " " + byte8.uppercaseString + " " + byte9.uppercaseString + " " + byte10.uppercaseString + " " + byte11.uppercaseString + " " + byte12.uppercaseString + " " + byte13.uppercaseString + " " + byte14.uppercaseString + " " + byte15.uppercaseString + " " + byte16.uppercaseString
-            
+            var idpsReversed = byteReverse(bytes).hexString().uppercaseString
             
             //Saving idps as .TXT
             var cleaningSavingFolder = url.absoluteString?.stringByReplacingOccurrencesOfString("bkpps3.bin", withString: "", options: nil, range: nil)
             var newUrl = NSURL(string:cleaningSavingFolder!)
             
             let fileDestinationUrl = newUrl!.URLByAppendingPathComponent("idps.txt")
-            let text = idps
-            text.writeToURL(fileDestinationUrl, atomically: true, encoding: NSUTF8StringEncoding, error: nil)
+            idpsReversed.writeToURL(fileDestinationUrl, atomically: true, encoding: NSUTF8StringEncoding, error: nil)
             
             //Display the IDPS
             lblText.stringValue = "Your IDPS is:"
-            idpsDisplay.stringValue = idpsSpaced
+            idpsDisplay.stringValue = idpsReversed
             
             //Saving idps as .BIN
             let idpsBin = newUrl!.URLByAppendingPathComponent("idps.bin")
-            var finalData = idps.dataFromHexadecimalString()
+            var finalData = idpsReversed.dataFromHexadecimalString()
             finalData!.writeToURL(idpsBin, atomically: true)
             
         } else {
